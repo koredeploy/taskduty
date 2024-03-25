@@ -32,13 +32,12 @@ export const Tasks = () => {
               <h2 className='text-start '>{datum.taskTitle}</h2>
               <p className='text-start '>{datum.description}</p>
             </div>
-         
         </div>
         </div>
       ))}
     </div>
-    <div className='d-flex justify-content-center py-4'>
-    <a href="#top" className=' text-center '> Back To Top</a>
+    <div className='d-flex justify-content-center py-4 '>
+    <a href="#top" className='text-center text-decoration-underline '> Back To Top</a>
     </div>
     </div>
   )
