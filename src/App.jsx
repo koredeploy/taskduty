@@ -2,7 +2,8 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home/Home'
 import RootLayout from './layout/RootLayout'
-import MyTask from './pages/mytask/MyTask'
+import { Tasks } from './pages/alltask/Tasks'
+
 function App() {
 
   return (
@@ -10,7 +11,7 @@ function App() {
       <Routes>
         <Route element={<RootLayout/>}>
         <Route path='/' element={<Home/>}/>
-        <Route path="/mytask" element={<MyTask/>}/>
+        <Route path='/alltask' element={<Tasks/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

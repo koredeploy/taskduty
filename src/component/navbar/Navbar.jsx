@@ -14,9 +14,9 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light border-bottom py-4">
       <div className="container">
-        <a className="navbar-brand" href="#">
+        <Link className="navbar-brand" to="/">
           <img src={logo} alt="Logo" />
-        </a>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -27,12 +27,12 @@ const Navbar = () => {
         <div className={`collapse navbar-collapse ${isOpen ? "show bottom-shadow" : ""} justify-content-end `}>
           <ul className={`navbar-nav ml-auto ${isOpen ? " py-4 " : ""}`}>
             <li className="nav-item text-center text-lg-start">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="newtask">
                 New Task
               </Link>
             </li>
             <li className="nav-item text-center text-lg-start">
-              <Link className="nav-link" to="#">
+              <Link className="nav-link" to="alltask">
                 All Task
               </Link>
             </li>
@@ -44,3 +44,6 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
