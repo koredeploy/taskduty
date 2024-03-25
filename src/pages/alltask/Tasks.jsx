@@ -5,7 +5,7 @@ import { dummyData } from '../../data'
 export const Tasks = () => {
   console.log(dummyData);
   return (
-    <div className='container py-3'>
+    <div className='container py-3' id="top">
       <div className='d-flex justify-content-between align-items-center py-4'>
         <div>
           <h1>My Task</h1>
@@ -36,6 +36,9 @@ export const Tasks = () => {
         </div>
         </div>
       ))}
+    </div>
+    <div className='d-flex justify-content-center py-4'>
+    <a href="#top" className=' text-center '> Back To Top</a>
     </div>
     </div>
   )
