@@ -11,7 +11,7 @@ export const Tasks = () => {
           <h1>My Task</h1>
         </div>
         <div>
-          <Link to="newtask"> + Add New Task </Link>
+          <Link to="/newtask"> + Add New Task </Link>
         </div>
       </div>
 
